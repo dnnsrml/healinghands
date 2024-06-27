@@ -1,0 +1,92 @@
+.section-heading {
+  font-family: "Playfair Display", serif;
+  font-weight: 900;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  letter-spacing: 0.05rem;
+}
+.section-title {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.banner {
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 650px;
+  justify-content: center;
+  background-image: url("/images/nurse1.png");
+  background-size: cover;
+  background-position: center;
+}
+.hero .container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  padding-left: 100px;
+  justify-content: flex-start;
+  color: white;
+}
+.hero button {
+  font-weight: 400;
+  font-size: 1.2rem;
+  background-color: #0240a3;
+  padding: 20px 50px;
+  border: none;
+  border-radius: 40px;
+  color: #ffffff;
+  width: 40%;
+}
+
+.section-1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  padding: 100px 0;
+  background-color: #ffffff;
+}
+.section-1 .section-heading {
+  width: 60%;
+  text-align: center;
+  color: #222222;
+}
+.section-1 p {
+  color: #6c6c6c;
+}
+.section-tagline {
+  color: #6c6c6c;
+  width: 70%;
+  text-align: center;
+  margin-bottom: 100px;
+}
+
+/* Styles for mobile */
+@media (max-width: 1100px) {
+  .section-heading {
+    font-size: 2rem;
+    line-height: 2.5rem;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .hero .container {
+    width: 100%;
+    padding: 30px;
+  }
+  .hero button {
+    width: 100%;
+  }
+}

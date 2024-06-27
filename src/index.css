@@ -1,0 +1,533 @@
+:root {
+  --bgColor: #ffffff;
+  --titleTextColor: #222222;
+  --normalTextColor: #6c6c6c;
+  --linkColor: #222222;
+  --linkHoverColor: #000000;
+  --borderColor: #cccccc;
+  --highlightColor: #000000;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body * {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+/* FONTS ------------------------------------------------------- */
+.heading {
+  font-family: "Playfair Display", serif;
+  font-weight: 500;
+}
+.weight-normal {
+  font-weight: 300;
+}
+.weight-medium {
+  font-weight: 500;
+}
+.weight-bold {
+  font-weight: 700;
+}
+.weight-black {
+  font-weight: 900;
+}
+.size-normal {
+  font-size: 1rem;
+}
+.size-big {
+  font-size: 2rem;
+  line-height: 2.5rem;
+}
+.size-bigger {
+  font-size: 3rem;
+  line-height: 3.5rem;
+}
+.size-biggest {
+  font-size: 5rem;
+}
+.size-small {
+  font-size: 0.8rem;
+}
+.italic {
+  font-style: italic;
+}
+.normal {
+  font-style: normal;
+}
+.normal-text-color {
+  color: var(--normalTextColor);
+}
+.title-text-color {
+  color: var(--titleTextColor);
+}
+.white {
+  color: #ffffff;
+}
+.off-white {
+  color: #cccccc;
+}
+.darker-white {
+  color: #aaaaaa;
+}
+.text-centered {
+  text-align: center;
+}
+.decoration-underlined {
+  text-decoration: underline;
+}
+/* FLEX ------------------------------------------------------- */
+.flex-col {
+  display: flex;
+  flex-direction: column;
+}
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+.items-centered {
+  align-items: center;
+}
+.justified-center {
+  justify-content: center;
+}
+.spaced-between {
+  justify-content: space-between;
+}
+.child-1 {
+  flex-grow: 1;
+  flex-basis: 0;
+  min-width: 0;
+}
+.child-2 {
+  flex-grow: 2;
+  flex-basis: 0;
+  min-width: 0;
+}
+.child-3 {
+  flex-grow: 3;
+  flex-basis: 0;
+  min-width: 0;
+}
+.invisible {
+  display: none;
+}
+/* WIDTH & HEIGHT ------------------------------------------------------- */
+.full-width {
+  width: 100%;
+}
+.less-width {
+  width: 90%;
+}
+.width-50 {
+  width: 50%;
+}
+.width-60 {
+  width: 60%;
+}
+.least-width {
+  width: 80%;
+}
+.full-height {
+  height: 100vh;
+}
+/* PADDINGS ------------------------------------------------------- */
+/* Padding 10px */
+.p10 {
+  padding: 10px;
+}
+.pt10 {
+  padding-top: 10px;
+}
+.pr10 {
+  padding-right: 10px;
+}
+.pb10 {
+  padding-bottom: 10px;
+}
+.pl10 {
+  padding-left: 10px;
+}
+.ph10 {
+  padding: 0 10px;
+} /* Horizontal padding */
+.pv10 {
+  padding: 10px 0;
+} /* Vertical padding */
+
+/* Padding 20px */
+.p20 {
+  padding: 20px;
+}
+.pt20 {
+  padding-top: 20px;
+}
+.pr20 {
+  padding-right: 20px;
+}
+.pb20 {
+  padding-bottom: 20px;
+}
+.pl20 {
+  padding-left: 20px;
+}
+.ph20 {
+  padding: 0 20px;
+}
+.pv20 {
+  padding: 20px 0;
+}
+
+/* Padding 30px */
+.p30 {
+  padding: 30px;
+}
+.pt30 {
+  padding-top: 30px;
+}
+.pr30 {
+  padding-right: 30px;
+}
+.pb30 {
+  padding-bottom: 30px;
+}
+.pl30 {
+  padding-left: 30px;
+}
+.ph30 {
+  padding: 0 30px;
+} /* Horizontal padding */
+.pv30 {
+  padding: 30px 0;
+} /* Vertical padding */
+
+/* Padding 50px */
+.p50 {
+  padding: 50px;
+}
+.pt50 {
+  padding-top: 50px;
+}
+.pr50 {
+  padding-right: 50px;
+}
+.pb50 {
+  padding-bottom: 50px;
+}
+.pl50 {
+  padding-left: 50px;
+}
+.ph50 {
+  padding: 0 50px;
+}
+.pv50 {
+  padding: 50px 0;
+}
+
+/* Padding 100px */
+.p100 {
+  padding: 100px;
+}
+.pt100 {
+  padding-top: 100px;
+}
+.pr100 {
+  padding-right: 100px;
+}
+.pb100 {
+  padding-bottom: 100px;
+}
+.pl100 {
+  padding-left: 100px;
+}
+.ph100 {
+  padding: 0 100px;
+}
+.ph200 {
+  padding: 0 200px;
+}
+.pv100 {
+  padding: 100px 0;
+} /* Vertical padding */
+
+/* MARGINS ------------------------------------------------------- */
+/* Margin 10px */
+.m10 {
+  margin: 10px;
+}
+.mt10 {
+  margin-top: 10px;
+}
+.mr10 {
+  margin-right: 10px;
+}
+.mb10 {
+  margin-bottom: 10px;
+}
+.ml10 {
+  margin-left: 10px;
+}
+.mh10 {
+  margin: 0 10px;
+} /* Horizontal margin */
+.mv10 {
+  margin: 10px 0;
+} /* Vertical margin */
+
+/* Margin 20px */
+.m20 {
+  margin: 20px;
+}
+.mt20 {
+  margin-top: 20px;
+}
+.mr20 {
+  margin-right: 20px;
+}
+.mb20 {
+  margin-bottom: 20px;
+}
+.ml20 {
+  margin-left: 20px;
+}
+.mh20 {
+  margin: 0 20px;
+} /* Horizontal margin */
+.mv20 {
+  margin: 20px 0;
+} /* Vertical margin */
+
+/* Margin 30px */
+.m30 {
+  margin: 30px;
+}
+.mt30 {
+  margin-top: 30px;
+}
+.mr30 {
+  margin-right: 30px;
+}
+.mb30 {
+  margin-bottom: 30px;
+}
+.ml30 {
+  margin-left: 30px;
+}
+.mh30 {
+  margin: 0 30px;
+} /* Horizontal margin */
+.mv30 {
+  margin: 30px 0;
+} /* Vertical margin */
+
+/* Margin 50px */
+.m50 {
+  margin: 50px;
+}
+.mt50 {
+  margin-top: 50px;
+}
+.mr50 {
+  margin-right: 50px;
+}
+.mb50 {
+  margin-bottom: 50px;
+}
+.ml50 {
+  margin-left: 50px;
+}
+.mh50 {
+  margin: 0 50px;
+} /* Horizontal margin */
+.mv50 {
+  margin: 50px 0;
+} /* Vertical margin */
+
+/* Margin 100px */
+.m100 {
+  margin: 100px;
+}
+.mt100 {
+  margin-top: 100px;
+}
+.mr100 {
+  margin-right: 100px;
+}
+.mb100 {
+  margin-bottom: 100px;
+}
+.ml100 {
+  margin-left: 100px;
+}
+.mh100 {
+  margin: 0 100px;
+} /* Horizontal margin */
+.mv100 {
+  margin: 100px 0;
+} /* Vertical margin */
+.mh-auto {
+  margin: 0 auto;
+}
+
+/* BUTTON ------------------------------------------------------- */
+.header-button {
+  font-weight: 400;
+  background-color: #0240a3;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 20px;
+  color: #ffffff;
+}
+.default-button {
+  font-weight: 400;
+  font-size: 1.2rem;
+  background-color: #0240a3;
+  padding: 20px 50px;
+  border: none;
+  border-radius: 40px;
+  color: #ffffff;
+  width: 50%;
+}
+.default-button:hover,
+.header-button:hover {
+  background-color: #002b6f;
+}
+/* ICONS ------------------------------------------------------- */
+.round-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: #ebf6fc;
+  border: 1px solid #98bfff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.smaller-round-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #ebf6fc;
+  border: 1px solid #98bfff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.round-icon .svg-inline--fa {
+  color: #0240a3;
+  font-size: 1.2rem;
+}
+
+.card {
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+/* ------ ------------------------------------------------------- */
+
+.banner {
+  background-color: #333333;
+  color: #ececec;
+}
+.banner p {
+  font-size: 0.8rem;
+  color: #ffffff;
+  font-weight: 500;
+}
+.header {
+  background-color: #ffffff;
+}
+.header a {
+  color: #555555;
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+.header a:hover {
+  border-bottom: 3px solid #0240a3;
+  color: #111111;
+}
+.header button {
+  font-size: 1.1rem;
+}
+.fixed-top {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(255, 255, 255, 1);
+}
+.section p {
+  line-height: 1.5em;
+}
+.section2-img {
+  width: 100%;
+  height: 100%;
+}
+.about {
+  background-color: #ebf6fc;
+}
+.testimonial {
+  background-color: #0240a3;
+  border-radius: 15px;
+  padding: 30px;
+}
+.profile {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ebf6fc;
+  border: 5px solid #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.footer {
+  background-color: #00183e;
+}
+.footer a,
+.footer p {
+  color: #aaaaaa;
+  font-size: 1rem;
+}
+.toggling-menu {
+  padding: 30px;
+  height: 100vh;
+  background-color: #fcfcfc;
+}
+.mini-hero {
+  height: 250px;
+  background-image: url("/images/nurses2.png");
+  background-size: cover;
+  background-position: center;
+}
+.contact-form {
+  padding: 30px;
+  border-radius: 10px;
+  background-color: #ebf6fc;
+}
+.contact-form input {
+  padding: 20px 10px;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  background-color: #fcfcfc;
+}
+.contact-form textarea {
+  padding: 20px 10px;
+  border: 1px solid #ececec;
+  border-radius: 10px;
+  background-color: #fcfcfc;
+}
+.contact-form .submit-button {
+  background-color: #0240a3;
+  padding: 10px 50px;
+  border-radius: 40px;
+  border: none;
+  color: white;
+}
